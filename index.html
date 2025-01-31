@@ -5,58 +5,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choma zone Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Choma Zone</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="mainName"><h2>Choma Zone</h2>
+        </div>
+        
+        <div class="navName">
+            <nav>
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#services">About</a></li>
+                    <li><a href="#testimonials">Application</a></li>
+                    <li><a href="#contact">History</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logIn">
+            <button type="button" class="btn btn-outline-primary">Log in</button>
+        </div>
+
+        <div class="signUp">
+            <button type="button" class="btn btn-outline-primary">Sign up</button>
+        </div>
+
+        <div class="mainImage">
+            <img src="images/1.png" alt="mainChef">
+        </div>
     </header>
 
-    <section id="hero">
-        <h2>Find & Search Your Doctor</h2>
+    <section class="findUs">
+        <h2>Find Our Outdoor Catering and/or Event Handlers</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </section>
 
-    <section id="services">
-        <h2>Our Consulting Specialists</h2>
-        <div class="service">
-            <h3>Covid-19 Test</h3>
+    <section class="dropDown">
+        <div class="dropdown-container">
+            <label for="event-type">Select Event Type:</label>
+            <select id="event-type">
+                <option value="">--Select an Event Type--</option>
+                <option value="wedding">Wedding</option>
+                <option value="office-party">Office Party</option>
+                <option value="birthday-party">Birthday Party</option>
+                <option value="conference">Conference</option>
+                <option value="baby-shower">Baby Shower</option>
+                <option value="graduation">Graduation</option>
+            </select>
+        </div>
+    
+        <div class="dropdown-container">
+            <label for="location">Select Location:</label>
+            <select id="location">
+                <option value="">--Select County Location--</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="kiambu">Kiambu</option>
+                <option value="machakos">Machakos</option>
+                <option value="mombasa">Mombasa</option>
+                <option value="kisumu">Kisumu</option>
+                <option value="nakuru">Nakuru</option>
+            </select>
+        </div>
+
+        <div>
+            <img src="" alt="Small Search Lens">
+        </div>
+    </section>
+
+    <section class="ourStats">
+        <div class="fullTimeSupport">
+            <h1>24/7</h1>
+            <p>Customer Support</p>
+        </div>
+
+        <div class="backUpTeams">
+            <h1>17+</h1>
+            <p>Back-Up Teams</p>
+        </div>
+
+        <div class="repeatCustomers">
+            <h1>150+</h1>
+            <p>Repeat Customers</p>
+        </div>
+    </section>
+
+    <section class="cateringSchools">
+        <h2>View Our New Catering Schools To Learn:</h2>
+
+        <div class="africanCuisine">
+            <img src="" alt="Avatar for Africa">
+            <h3>African Cuisine</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="service">
-            <h3>Heart</h3>
+
+        <div class="europeanCuisine">
+            <img src="" alt="Avatar for Europe">
+            <h3>European Cuisine</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="service">
-            <h3>Lungs</h3>
+
+        <div class="australianCuisine">
+            <img src="" alt="Avatar for Australia">
+            <h3>Australia Cuisine</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="service">
-            <h3>Mental Health</h3>
+
+        <div class="asianCuisine">
+            <img src="" alt="Avatar for Asia">
+            <h3>Asian Cuisine</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
     </section>
 
-    <section id="testimonials">
-        <h2>What Our Members Say</h2>
-        <div class="testimonial">
-            <p>"Great service!" - Jane Cooper</p>
+    <section class="theBest">
+        <div class="bestServices">
+            <img id="stubborn" src="images/2.jpg" alt="Mouth-watering Delicacy by our team">
         </div>
-        <div class="testimonial">
-            <p>"Highly recommend!" - John Doe</p>
+
+        <div class="theBestDescription">
+            <h2>Why We Are The Best:</h2>
+            <ul>
+                <li>Experienced and Professional Team</li>
+                <li>Customized Event Planning to Fit Your Needs</li>
+                <li>Access to Exclusive Venues and Vendors</li>
+                <li>Attention to Detail and Quality Service</li>
+                <li>24/7 Support and Communication</li>
+            </ul>
+            <p>
+                <a href="learn-more.html" class="learn-more">Learn More</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="customerReviews">
+        <div class="clientComments">
+            <h2>What Our Clients Say:</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+            <div class="avatarReviews">
+                <img src="images/7.jpg" alt="Avatar1">
+                <img src="images/8.jpg" alt="Avatar2">
+                <img src="images/9.jpg" alt="Avatar3">
+                <img src="images/10.jpg" alt="Avatar4">
+                <img src="images/11.jpg" alt="Avatar5">
+                <img src="images/12.jpg" alt="Avatar6">
+            </div>
+    
+            <h4>100+ Reviews</h4>
+        </div>
+
+        <div class="reviewScreenshot">
+            <img src="images/4.png" alt="Customer Review Screenshot">
+        </div>
+    </section>
+
+    <section class="whatElse">
+
+        <div class="moreServices">
+            <h2>What Else We Offer</h2>
+            <p>
+                Apart from expertly managing your events, we also provide a range of 
+                additional services to ensure a seamless experience for our clients. 
+                Our offerings include personalized event design and decor, catering 
+                services featuring a variety of cuisines, and access to exclusive venues. 
+                We also offer event marketing solutions to help promote your event 
+                effectively, as well as on-site coordination to ensure everything runs 
+                smoothly on the day of the event. Our dedicated team is committed to 
+                making your vision a reality, no matter the occasion.
+            </p>
+
+            <p>
+                <a href="learn-more.html" class="learn-more">Learn More</a>
+            </p>
+        </div>
+
+        <div class="servicesImage">
+            <img src="images/5.jpg" alt="Our Other Services">
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div>
+            <h3>Subscribe to Our Mailing List</h3>
+
+            <div>
+                <button type="button" class="btn btn-outline-primary">
+                </button>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2022 E-Sheba. All Rights Reserved.</p>
-        <p>24/7 Online Support</p>
+        <div class="partingShot">
+            <h2>Choma Zone</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+                quisquam expedita magnam modi minima sunt nisi laborum officia 
+                aliquam illum officiis et, vitae perferendis unde. Optio veritatis 
+                minus omnis consectetur?
+                Atque vel voluptatem iusto doloremque omnis enim debitis nihil cum ullam
+                ducimus, sed unde laborum veniam odio vero dolor error itaque quidem 
+                explicabo aspernatur ad amet nobis tempore quasi. Nam?
+                Autem hic id expedita nihil placeat at necessitatibus, vero fuga aut.
+                Numquam facere sunt laborum libero voluptatibus dicta incidunt aliquid 
+                itaque a, dolorum quo, quaerat, blanditiis accusantium vel quos nemo?
+            </p>
+
+            <div class="ourSocials">
+                <a href="https://www.facebook.com/yourpage" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/yourpage" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/yourpage" target="_blank" class="social-link">
+                    <i class="fab fa-x"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="useful-links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+            </ul>
+        </div>
+
+        <div id="address">
+            <h2>Our Address</h2>
+            <img src="images/6.jpg" alt="Map showing our location">
+        </div>
+
+        <p>&copy; 2025 Choma-Zone. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

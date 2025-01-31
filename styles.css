@@ -1,63 +1,183 @@
+/* Reset some default styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f9f9f9; /* Light background for the body */
 }
 
+/* Container for the main content */
+.container {
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Header styles */
 header {
-    background: orange;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    display: flex; /* Use Flexbox to align items in a row */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add some padding */
+    background-color: orange; /* Background color for the header */
+    color: #fff; /* Text color */
+    border-bottom: 1px solid #ccc; /* Optional: Add a bottom border */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.mainName h2 {
+    margin: 0; /* Remove default margin */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.navName nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use Flexbox for the navigation items */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.navName nav ul li {
+    margin: 0 15px; /* Space between navigation items */
 }
 
-#hero {
-    background: #f4f4f4;
-    padding: 50px 0;
-    text-align: center;
+.navName nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Link color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-#services {
+.navName nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.logIn, .signUp {
+    margin-left: 10px; /* Space between buttons */
+}
+
+.btn {
+    padding: 10px 15px; /* Button padding */
+    border: 1px solid #fff; /* Button border */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #fff; /* Background color on hover */
+    color: orange; /* Text color on hover */
+}
+
+/* Main Image styles */
+.mainImage {
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Distance from the top */
+    right: 950px; /* Distance from the right */
+    width: 150px; /* Set a smaller width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it floats above other content */
+}
+
+/* Section styles */
+section {
+    padding: 20px; /* Add padding to sections */
+    margin: 20px 0; /* Space between sections */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Dropdown styles */
+.dropdown-container {
+    margin: 20px; /* Add margin for spacing */
+    flex: 1; /* Allow dropdowns to grow equally */
+}
+
+.dropdown-container label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+/* Stats section styles */
+.ourStats {
+    display: flex;
+    justify-content: space-around; /* Space out stats evenly */
     padding: 20px;
-    text-align: center;
+    background-color: orange; /* Background color for stats section */
+    color: #fff; /* Text color for stats */
 }
 
-.service {
-    margin: 20px 0;
+.ourStats div {
+    text-align: center; /* Center text in each stat box */
 }
 
-#testimonials {
-    background: #f4f4f4;
+/* Catering Schools section styles */
+.cateringSchools {
+    display: flex; /* Use Flexbox to align items in a row */
+    justify-content: space-between; /* Space out items evenly */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center text in each item */
+}
+
+.cateringSchools div {
+    flex: 1; /* Allow each item to grow equally */
+    margin: 0 10px; /* Add margin for spacing between items */
+}
+
+/* The Best section styles */
+.theBest {
+    display: flex; /* Use Flexbox to align items in a row */
+    justify-content: space-between; /* Space out items evenly */
+    padding: 20px; /* Add padding */
+}
+
+.bestServices {
+    flex: 1; /* Allow the image to take up space */
+}
+
+.theBestDescription {
+    flex: 2; /* Allow the description to take up more space */
+    padding-left: 20px; /* Space between image and text */
+}
+
+/* Customer Reviews section styles */
+.customerReviews {
+    display: flex;
+    justify-content: space-between; /* Space out reviews evenly */
     padding: 20px;
-    text-align: center;
+    background-color: #fff; /* White background for contrast */
 }
 
-.testimonial {
-    margin: 10px 0;
+.clientComments {
+    flex: 2; /* Take more space */
 }
 
+.reviewScreenshot {
+    flex: 1; /* Take less space */
+}
+
+/* What Else We Offer section styles */
+.whatElse {
+    display: flex;
+    justify-content: space-between; /* Space out items evenly */
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+}
+
+.moreServices {
+    flex: 2; /* Allow the text to take up more space */
+}
+
+.servicesImage {
+    flex: 1; /* Allow the image to take up space */
+}
+
+/* Subscribe section styles */
+.subscribe {
+    text-align: center; /* Center the content */
+}
+
+/* Footer styles */
 footer {
-    background: orange;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    background: orange; /* Background color for footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text
