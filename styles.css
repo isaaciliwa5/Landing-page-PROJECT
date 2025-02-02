@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -170,7 +174,7 @@ section {
 }
 
 /* Hover effect for stats */
-.fullTimeSupport .backUpTeams .repeatCustomers:hover {
+.ourStats div:hover {
     transform: scale(1.05); /* Slightly enlarge the stat box on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
