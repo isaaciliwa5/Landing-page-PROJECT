@@ -185,18 +185,64 @@ section {
     background-color: transparent; /* Optional: background color for the empty container */
 }
 
-/* Catering Schools section styles */
 .cateringSchools {
-    display: flex; /* Use Flexbox to align items in a row */
-    justify-content: space-between; /* Space out items evenly */
-    padding: 20px; /* Add padding */
-    text-align: center; /* Center text in each item */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-rows: auto 1fr; /* First row for heading, second row for cuisines */
+    gap: 20px; /* Space between rows */
+    padding: 20px; /* Add padding around the section */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.cateringSchools div {
-    flex: 1; /* Allow each item to grow equally */
-    margin: 0 10px; /* Add margin for spacing between items */
+.headingCuisine {
+    grid-row: 1; /* Place heading in the first row */
+    text-align: center; /* Center the heading text */
 }
+
+.africanCuisine,
+.europeanCuisine,
+.australianCuisine,
+.asianCuisine {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 10px; /* Add padding */
+    background-color: #fff; /* White background for each cuisine box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.africanCuisine img,
+.europeanCuisine img,
+.australianCuisine img,
+.asianCuisine img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.cateringSchools > div {
+    grid-row: 2; /* Place all cuisine boxes in the second row */
+}
+
+.cateringSchools > div:nth-child(n+2) {
+    flex: 1; /* Allow each cuisine box to grow equally */
+    margin: 10px; /* Space between cuisine boxes */
+}
+
+/* Hover effect for cuisine boxes */
+.africanCuisine:hover,
+.europeanCuisine:hover,
+.australianCuisine:hover,
+.asianCuisine:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+
 
 /* The Best section styles */
 .theBest {
