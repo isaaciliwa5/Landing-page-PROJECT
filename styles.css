@@ -1,9 +1,62 @@
-/* Reset some default styles */
-body {
+
+body, h1, h2, h3, p, ul, li {
     margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9; /* Light background for the body */
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header, .footer, .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #ffcc00; /* Change color on hover */
 }
 
 /* Container for the main content */
@@ -71,8 +124,8 @@ header {
 .mainImage {
     position: absolute; /* Position it absolutely */
     top: 10px; /* Distance from the top */
-    right: 950px; /* Distance from the right */
-    width: 150px; /* Set a smaller width */
+    right: 12px; /* Distance from the right */
+    width: 750px; /* Set a smaller width */
     height: auto; /* Maintain aspect ratio */
     z-index: 10; /* Ensure it floats above other content */
 }
@@ -99,15 +152,33 @@ section {
 
 /* Stats section styles */
 .ourStats {
-    display: flex;
-    justify-content: space-around; /* Space out stats evenly */
-    padding: 20px;
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr) 4fr; /* Create three equal columns for stats and one column that takes up half the width */
+    gap: 10px; /* Space between grid items */
+    padding: 20px; /* Add padding around the section */
     background-color: orange; /* Background color for stats section */
     color: #fff; /* Text color for stats */
 }
 
-.ourStats div {
+/* Styling for each stat box */
+.fullTimeSupport .backUpTeams .repeatCustomers {
     text-align: center; /* Center text in each stat box */
+    background-color: orangered; /* Background color for each stat box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside each stat box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+/* Hover effect for stats */
+.fullTimeSupport .backUpTeams .repeatCustomers:hover {
+    transform: scale(1.05); /* Slightly enlarge the stat box on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Empty container styling */
+.emptyContainer {
+    /* This container will take up half the width of the section */
+    background-color: transparent; /* Optional: background color for the empty container */
 }
 
 /* Catering Schools section styles */
@@ -181,3 +252,20 @@ footer {
     background: orange; /* Background color for footer */
     color: #fff; /* Text color */
     text-align: center; /* Center text
+};
+
+/* Image styling */
+#stubborn {
+    position: relative;
+    width: 100px; /* Set a reasonable width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid #ccc; /* Optional: border around the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for transform and shadow */
+}
+
+/* Hover effect */
+#stubborn:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+};

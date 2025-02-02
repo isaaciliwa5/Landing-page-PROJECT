@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightrunners Registration Form</title>
+    <link rel="stylesheet" href="styles-F.css">
+</head>
+<body>
+    <div class="titleBlock">
+        <img src="Images-F/1b.png" alt="Our Logo" class="logoImage1">
+        <img src="Images-F/1b.png" alt="Our Diminishing Logo" class="logoImage2">
+        <img src="Images-F/1b.png" alt="Our Very Diminished Logo" class="logoImage3">
+        <header>
+        <h1>Nightrunners Fitness Community</h1>
+        <h2>Recruitment For Nightrunners</h2>
+        </header>
+        <p>Hello and Welcome! <br>
+        To join our robust fitness community of nightrunners, 
+        please complete the form below in totality and with specific attention 
+        to <strong>all required fields.</strong> 
+        </p>
+    </div>
+    
+    <main>
+        <form method="POST" action="/submit" id="myForm">
+            <div class="mainBlock">
+                <fieldset>
+                    <div class="block-01">
+                        <legend>
+                            <h3>Personal Information</h3>
+                        </legend>
+                        <div class="form-01">
+                            <label for="firstName" class="required">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Johnny" required>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="lastName" class="required">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Mkimbizi" required>
+                        </div>
+
+                        <div class="form-01">
+                            <legend>Gender:</legend>
+                            <label for="male">
+                                <input type="radio" name="gender" id="male" value="male" required>Male
+                            </label>
+
+                            <label for="female">
+                                <input type="radio" name="gender" id="female" value="female" required>Female
+                            </label>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="dateOfBirth" class="required">Date of Birth:</label>
+                            <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="age" class="required">Age:</label>
+                            <input type="number" name="age" id="age" min="18" max="120" required>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="profilePic">Upload Profile Picture:</label>
+                            <input type="file" name="profilePic" id="profilePic" accept="image/*" required>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="bio">
+                                <h4>Bio/Tell Us About You:</h4>
+                            </label> <br>
+                            <textarea name="bio" id="bio" rows="4" cols="63.5" placeholder="Write a brief introduction about yourself and tell us about your family's history of nightrunning if any; or any other attribute(s) that makes you a preferable candidate"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="block-02">
+                        <legend>
+                            <h3>Contact Information</h3>
+                        </legend>
+                        <div class="form-01">
+                            <label for="email">Email Address:</label>
+                            <input type="text" name="email" id="email" placeholder="johnnymkimbizi@example.com" required>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="phone">Telephone:</label>
+                            <input type="tel" name="phone" id="phone" pattern="^\d{10}$" placeholder="+1234567890" required>
+                        </div>
+
+                        <div class="form-01">
+                            <legend>
+                                <h4>Preferred Contact Method:</h4>
+                            </legend>
+                            <label for="email">
+                                <input type="radio" name="contact" id="email" value="email" required>Email
+                            </label>
+
+                            <label for="telephone">
+                                <input type="radio" name="contact" id="phone" value="phone" required>Telephone
+                            </label>
+                        </div>
+
+                        <legend>
+                            <h4>Physical Address:</h4>
+                        </legend>
+                        <label for="country">Country Of Origin:</label>
+                        <select name="country" id="country" required>
+                            <option value="" disabled selected>Country Of Origin</option>
+
+                            <optgroup label="North Africa">
+                                <option value="algeria">Algeria</option>
+                                <option value="egypt">Egypt</option>
+                                <option value="libya">Libya</option>
+                                <option value="morocco">Morocco</option>
+                                <option value="tunisia">Tunisia</option>
+                            </optgroup>
+
+                            <optgroup label="South Africa">
+                                <option value="zimbabwe">Zimbabwe</option>
+                                <option value="botswana">Botswana</option>
+                                <option value="lesotho">Lesotho</option>
+                                <option value="namibia">Namibia</option>
+                                <option value="south-africa">South Africa</option>
+                            </optgroup>
+
+                            <optgroup label="West Africa">
+                                <option value="burkina-faso">Burkina Faso</option>
+                                <option value="ghana">Ghana</option>
+                                <option value="nigeria">Nigeria</option>
+                                <option value="senegal">Senegal</option>
+                                <option value="ivory-coast">Ivory Coast</option>
+                            </optgroup>
+
+                            <optgroup label="East Africa">
+                                <option value="somalia">Somalia</option>
+                                <option value="ethiopia">Ethiopia</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="tanzania">Tanzania</option>
+                                <option value="seychelles">Seychelles</option>
+                            </optgroup>
+                        </select> <br>
+
+                        <label>
+                            <legend>
+                                <h4>Subscriptions:</h4>
+                            </legend>
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            To Subscribe to our Newsletters and Mailing Lists!
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="block-03">
+                        <legend>
+                            <h3>Account Information</h3>
+                        </legend>
+                        <div class="form-01">
+                            <legend>Account Type:</legend>
+                            <label for="personalAccount">
+                                <input type="radio" name="accountType" id="personalAccount" 
+                                value="personalAccount" required>Personal Account
+                            </label>
+
+                            <label for="businessAccount">
+                                <input type="radio" name="accountType" id="businessAccount" 
+                                value="businessAccount" required>Business Account
+                            </label>
+                        </div>
+
+                        <div class="form-01">
+                            <legend>
+                                <h4>Login Credentials:</h4>
+                            </legend>
+                            <label for="username" class="required">Username:</label>
+                            <input type="text" id="username" name="username" pattern="[A-Za-z]{5,15}" placeholder="Mkimbizi" required>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="password">Password:</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(.*\d).{8,}$"
+                                title="Password must contain at least 1 uppercase letter, at least 1 lowercase letter, at least 1 digit and have a minimum length of 8 characters "
+                                required>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="confirmPassword" class="required">Confirm Password:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="block-04">
+                        <legend>
+                            <h3>Referrers</h3>
+                        </legend>
+                        <div class="form-01">
+                            <label for="referees">How Did You Discover Us?</label>
+                            <select name="referees" id="referees" required>
+                                <option value="" disabled selected>Select how you discovered Us</option>
+                                <option value="friend">Friend</option>
+                                <option value="villageGrapevine">Village Grapevine</option>
+                                <option value="yourDreams">You saw Us in your Dreams</option>
+                                <option value="onlineSearch">Online Search</option>
+                                <option value="socialMedia">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-01">
+                            <label for="other">
+                                <h4>If Other:</h4>
+                            </label> <br>
+                            <textarea name="other" id="other" rows="3" cols="63.5" placeholder="Briefly describe which other means you came to know about Us"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="block-05">
+                        <legend>
+                            <h3>Complementary Hobbies & Personal Interests</h3>
+                        </legend>
+                        <div class="form-01">
+                            <legend>Select Your Hobbies:</legend>
+                            <label for="sprinting">
+                                <input type="checkbox" name="hobbies" id="sprinting" value="sprinting">
+                                Sprinting
+                            </label> <br>
+
+                            <label for="longDistanceRacing">
+                                <input type="checkbox" name="hobbies" id="longDistanceRacing" value="longDistanceRacing">
+                                Long-distance Running
+                            </label> <br>
+
+                            <label for="highJump">
+                                <input type="checkbox" id="highJump" name="hobbies" value="highJump">
+                                High Jump
+                            </label> <br>
+
+                            <label for="longJump">
+                                <input type="checkbox" name="hobbies" id="longJump" value="longJump">
+                                Long Jump
+                            </label> <br>
+
+                            <label for="poleVaulting">
+                                <input type="checkbox" name="hobbies" id="poleVaulting" value="poleVaulting">
+                                Pole Vaulting
+                            </label> <br>
+                        </div>
+
+                        <div class="form-01">
+                            <legend>
+                                <h4>Preferred Warm-Up Activities:</h4>
+                            </legend>
+                            <p>How do you like to Warm-Up before swinging into action?</p>
+                            <label for="jogging">
+                                <input type="checkbox" name="warmUp" id="jogging" value="jogging">
+                                Jogging In Place
+                            </label> <br>
+
+                            <label for="skipping">
+                                <input type="checkbox" name="warmUp" id="skipping" value="skipping">
+                                Skipping
+                            </label> <br>
+
+                            <label for="legSwings">
+                                <input type="checkbox" id="legSwings" name="warmUp" value="legSwings">
+                                Leg Swings
+                            </label> <br>
+
+                            <label for="armCircles">
+                                <input type="checkbox" name="warmUp" id="armCircles" value="armCircles">
+                                Arm Circles (not very useful for our endeavours though)
+                            </label> <br>
+
+                            <label for="torsoTwists">
+                                <input type="checkbox" name="warmUp" id="torsoTwists" value="torsoTwists">
+                                Torso Twists
+                            </label> <br>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="block-06">
+                        <legend>
+                            <h3>Our Terms & Conditions</h3>
+                        </legend>
+                        <div class="form-01">
+                            <h4>Disclaimer!</h4>
+                            <p>As you would expect, we operate on very strict terms, 
+                            we are a close-knit society and we intend to keep it that way. <br>
+                            The management expects you to understand that we intend to keep 
+                            our circle small due to:</p>
+                            <ul>
+                                <li>the risky nature of our gigs and</li>
+                                <li>our compulsive need to retain anonymity when the day breaks</li>
+                            </ul>
+
+                            <p>The sensitive nature of our terms does not allow us to post them here.
+                            We are very afraid; (why else would we operate in the dark?)
+                            </p>
+
+                            <p>Anyway, click the link below to read the terms and get surprised for yourself. <br>
+                            After you read, internalize them in your heart then come back and agree to them.
+                            </p>
+
+                            <label>
+                                <input type="checkbox" id="terms" name="terms" required>
+                                I, without any kweschon, fully agree to the 
+                                <a href="https://youtube.com/shorts/iPfp8q2rFRs?si=TTYLc1rGBXena9bx" target="_blank">
+                                Terms and Conditions
+                                </a>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        <button type="submit">Submit</button>
+
+        </form>
+        
+    </main>
+
+    <button onclick="window.print()">Print As Single Page</button>
+
+    <script>
+        window.print()
+    </script>
+    
+</body>
+</html>

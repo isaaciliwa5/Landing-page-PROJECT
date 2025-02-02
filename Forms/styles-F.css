@@ -1,0 +1,202 @@
+
+/* Backround color of page */
+html {
+    background-color: #00539f;
+}
+
+
+/* Backround color of body */
+body {
+    width: 1050px;
+    margin: 0 auto;
+    background-color: #ff9500;
+    padding: 20px;
+    border: 5px black;
+    font-family: 'calibri';
+    
+}
+
+/* Formating h1 */
+h1 {
+    margin: 0;
+    color: #00539f;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Formating h2 */
+h2 {
+    margin: 0;
+    color: #00539f;
+    
+}
+
+/* Formating h3 */
+h3 {
+    text-align: center;
+}
+
+/* Formating h4 */
+h4 {
+    margin-bottom: 10px;
+}
+
+/* Formating bio ID */
+#bio {
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 1px;
+}
+
+/* Formating other ID */
+#other {
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 1px;
+}
+
+/* Logo Image-1 Styling */
+.logoImage1 {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    height: 175px;
+    object-fit: cover;
+    z-index: -50;
+}
+
+/* Logo Image-2 Styling */
+.logoImage2 {
+    position: absolute;
+    top: -15px;
+    right: 350px;
+    height: 175px;
+    object-fit: cover;
+    z-index: -50;
+    opacity: 0.25;
+}
+
+/* Logo Image-3 Styling */
+.logoImage3 {
+    position: absolute;
+    top: -15px;
+    right: 750px;
+    height: 175px;
+    object-fit: cover;
+    z-index: -50;
+    opacity: 0.15;
+}
+
+
+/* Formating Title Block */
+.titleBlock {
+    position: relative;
+    z-index: 0;
+}
+
+
+/* Formating main block */
+.mainBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px auto;
+}
+
+/* Formating Minor block form-01 */
+
+
+/* Formating block-01 */
+.block-01 {
+    border-radius: 30px;
+    background-color: #0084ff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s box-shadow 0.3s;
+}
+
+/* setting block-01 to hover */
+.block-01:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Formating block-02 */
+.block-02 {
+    height: 335px;
+    border-radius: 30px;
+    background-color: #ff5e00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s box-shadow 0.3s;
+}
+
+/* setting block-02 to hover */
+.block-02:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+
+}
+    
+
+/* Formating block-03 */
+.block-03 {
+    height: 200px;
+    border-radius: 30px;
+    background-color: #ff5e00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s box-shadow 0.3s;
+}
+
+/* setting block-03 to hover */
+.block-03:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Formating block-04 */
+.block-04 {
+    border-radius: 30px;
+    background-color: #0084ff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s box-shadow 0.3s;
+}
+
+/* setting block-04 to hover */
+.block-04:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Formating block-05 */
+.block-05 {
+    height: 400px;
+    border-radius: 30px;
+    background-color: #0084ff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s box-shadow 0.3s;
+}
+
+/* setting block-05 to hover */
+.block-05:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Formating block-06 */
+.block-06 {
+    height: 400px;
+    border-radius: 30px;
+    background-color: #ff5e00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s box-shadow 0.3s;
+}
+
+/* setting block-06 to hover */
+.block-06:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
